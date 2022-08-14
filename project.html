@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Poppins:wght@100;200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>my Website</title>
+    <link rel="icon" type="image/x-icon" href="image/logo-5.png">
+</head>
+
+<body>
+    <header>
+        <div class="continer">
+            <div class="row">
+                <div class="col">
+                    <img src="image/logo-5.png" alt="">
+                    <input type="text" class="search" placeholder="search">
+                </div>
+                  
+                <div class="col right-top">
+                   <a id="menu"onclick="showme()" href="#">Home</a>
+                   <div class="bttn"><a id="m1" href="#">profile</a>
+                   <a  id="m2"href="#">log out</a></div>
+                   </div>
+                   <a href="#">About</a>
+                   <a href="#">Blog</a>
+                   <a href="#">Contact</a>
+                  <div class="tta"> <a href="#" class="cta">Connect Wallet</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+   <section class="hero">
+       <div class="container">
+           <div class="row">
+            <div class="col" style="height: 700px;"><img src="image/big-4.jpg" alt="">
+            <h3 style="color: #333;">Image Head</h3>
+            <p style="color:#333">This is paragraph</p>       
+        </div>
+            <div class="col w-25">
+              <div style="height: 340px;">  <img src="image/static-9.jpg" alt="">
+                <h3>Image Head</h3>
+                <p>this is paragraph</p>
+            </div>  
+            
+           <div style="height: 340px;margin-top: 20px;">
+            <img src="image/static-10.jpg" alt="">
+            <h3>Image Head</h3>
+            <p>this is paragraph</p>
+           </div>
+             
+            </div>
+            
+            
+            <div class="col w-25">
+              <div style="height: 340px;">  <img src="image/static-15.jpg" alt="">
+                <h3>Image Head</h3>
+                <p>this is paragraph</p>
+            </div>
+            <div style="height: 340px;margin-top: 20px;"> 
+                <img src="image/anim-4.webp" alt="">
+                <h3 style="color: #333;">Image Head</h3>
+                <p style="color: #333;">this is paragraph</p>
+            </div>
+            </div>
+           </div>
+           
+       </div>
+
+   </section>
+   <section>
+       <div class="clients">
+           <div class="row">
+               <div class="col"><img src="image/1.png" alt="">
+            <h3>Metatask</h3></div>
+               <div class="col"><img src="image/2.png" alt=""><h3>Bitski</h3></div>
+               <div class="col"><img src="image/3.png" alt=""><h3>Formatic</h3></div>
+               <div class="col"><img src="image/4.png" alt=""><h3>WalletConnect</h3></div>
+               <div class="col"><img src="image/5.png" alt=""><h3>Coinbase Wallet</h3></div>
+               <div class="col"><img src="image/6.png" alt=""><h3>Arkane</h3></div>
+           </div>
+       </div>
+   </section>
+   <footer>
+       <div class="row">
+           <div class="col">
+               <h3>Marketplace</h3>
+               <a href="#">All NFTs</a>
+               <a href="#">Art</a>
+               <a href="#">Music</a>
+               <a href="#">Domain Names</a>
+               <a href="#">Virtual World</a>
+               <a href="#">Collectibles</a>
+        </div>
+           <div class="col1">
+               <h3>Resources</h3>
+               <a href="#">Help Center</a>
+               <a href="#">Partners</a>
+               <a href="#">Suggestions</a>
+               <a href="#">Discord</a>
+               <a href="#">Docs</a>
+               <a href="#">Newsletter</a>
+            </div>
+           <div class="col2">
+               <h3>Community</h3>
+               <a href="#">Community</a>
+               <a href="#">Documentation</a>
+               <a href="#">  Brand Assets</a>
+               <a href="#"> Blog</a>
+               <a href="#">   Forum</a>
+               <a href="#">Mailing List</a>
+            </div> 
+           <div class="col3">
+               <h3>Newsletter</h3>
+               <p>Signup for our newsletter to get the latest news in your inbox.</p>
+               <input class="btn"type="email"placeholder="enter Your Email">
+               <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+               <span class="span">Your email is safe with us. We don't spam.</span>
+            </div> 
+       </div>
+   </footer>
+   <script>
+       let menu=document.getElementById('menu')
+       let m1=document.getElementById('m1')
+       let m2=document.getElementById('m2')
+
+       function hideme(){
+         m1.style.display='none'
+         m2.style.display='none'
+         menu.setAttribute('onclick','showme()')
+       }
+       function showme(){
+         m1.style.display='block'         
+         m2.style.display='block'     
+         menu.setAttribute('onclick','hideme()')
+         menu.classList.add('div  #m1,#m2')
+       }
+   </script>
+</body>
+
+</html>
